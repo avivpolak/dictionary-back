@@ -4,7 +4,7 @@ const AWS = require("aws-sdk");
 const dynamoDbClientParams = {};
 if (process.env.IS_OFFLINE) {
   dynamoDbClientParams.region = 'localhost'
-  dynamoDbClientParams.endpoint = 'http://localhost:4566'
+  dynamoDbClientParams.endpoint = 'http://localhost:3000'
 }
 const dynamoDbClient = new AWS.DynamoDB.DocumentClient(dynamoDbClientParams);
 

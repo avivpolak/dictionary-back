@@ -1,4 +1,4 @@
-const DICTIONARY_TABLE = process.env.DICTIONARY_TABLE;
+const DICTIONARY_TABLE = process.env.DICTIONARY_TABLE||"dictionary";
 
 const createTableParams = {
     AttributeDefinitions: [
